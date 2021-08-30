@@ -1,0 +1,38 @@
+{
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.rulers": [115, 120],
+  "editor.renderLineHighlight": "all",
+  "editor.tabSize": 4,
+  "terminal.integrated.fontSize": 15,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "breadcrumbs.enabled": true,
+  "sync.forceDownload": true,
+  "sync.gist": "a0657bddd5090233201b4b1fe2c6e636",
+  "sync.forceUpload": true,
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.parameterHints.enabled": true,
+  "prettier.trailingComma": "all",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}
