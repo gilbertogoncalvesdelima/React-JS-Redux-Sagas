@@ -1,0 +1,104 @@
+{
+  // Fix auto import console
+  "React native component": {
+    "prefix": [
+      "rnc"
+    ],
+    "body": [
+      "import React from 'react';",
+      "import * as S from './styles';",
+      "",
+      "interface Props {}",
+      "",
+      "class $1 extends React.Component<Props> {",
+      "  render() {",
+      "    return (",
+      "      <S.Wrapper>",
+      "        {/* */}",
+      "      </S.Wrapper>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default $1;",
+      ""
+    ],
+    "description": "React Native Component"
+  },
+  "React native styled component": {
+    "prefix": [
+      "rnstyled"
+    ],
+    "body": [
+      "const $1 = applyStyle($2)`",
+      "  $3",
+      "`;"
+    ],
+    "description": "React native styled component"
+  },
+
+  // --- SVG
+  "React native svg parsecolor": {
+    "prefix": [
+      "rnparse"
+    ],
+    "body": [
+      "parseColor(color)",
+    ],
+    "description": "React native svg parsecolor"
+  },
+
+  "React native svg color attr": {
+    "prefix": [
+      "rncolor"
+    ],
+    "body": [
+      "color={color}",
+    ],
+    "description": "React native svg color attr"
+  },
+
+
+  "React native svg component": {
+    "prefix": [
+      "rnsvg"
+    ],
+    "body": [
+      "import React from 'react';",
+      "import Svg, { Defs, G, Mask, Path, Use } from 'react-native-svg';",
+      "import { parseColor } from 'handlers/colors';",
+      "import { SvgAsset } from 'assets/svg/types';",
+      "",
+      "class $1 extends SvgAsset {",
+      " render() {",
+      "   const { color: rawColor, width = 32, height = 32, ...otherProps } = this.props;",
+      "   const color = parseColor(rawColor)", 
+      "",      
+      "   return (",
+      "     <Svg ",
+      "       viewBox=\"0 0 32 32\"", 
+      "       width={width}  ",
+      "       height={height}  ",
+      "       color={color} ",
+      "       {...otherProps}>",
+      "       <Defs>",
+      "         <Path id=\"$1Path\" d=\"\" />",
+      "       </Defs>",
+      "       <G fill=\"none\" fillRule=\"evenodd\">",
+      "         <Mask id=\"$1Mask\" fill=\"#fff\">",
+      "           <Use href=\"#$1Path\" />",
+      "         </Mask>",
+      "         <Use fill=\"#000\" fillRule=\"nonzero\" href=\"#$1Path\" />",
+      "         <G fill={color} mask=\"url(#$1Mask)\">",
+      "           <Path d=\"M0 0h32v32H0z\" />",
+      "         </G>",
+      "       </G>",
+      "     </Svg>",
+      "    );",
+      " }",
+      "};",
+      "",
+      "export default $1;",
+    ]
+  }
+}
